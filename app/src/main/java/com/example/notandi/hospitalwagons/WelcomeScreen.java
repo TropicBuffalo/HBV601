@@ -35,6 +35,7 @@ public class WelcomeScreen extends AppCompatActivity {
                 enterDataView();
             }
         });
+
         signoutbutton = (Button) findViewById(R.id.buttonUtskraning);// adding a listener for the "sign out" button
         signoutbutton.setOnClickListener(new View.OnClickListener() {
 
