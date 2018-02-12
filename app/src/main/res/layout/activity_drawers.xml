@@ -87,11 +87,11 @@
         android:layout_marginStart="8dp"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button10"
+        app:layout_constraintEnd_toStartOf="@+id/afram"
         app:layout_constraintStart_toEndOf="@+id/logout" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/afram"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
