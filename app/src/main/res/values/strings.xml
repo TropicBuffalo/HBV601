@@ -13,4 +13,15 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <!-- Not login strings -->
+    <string name="back_button">Til baka</string>
+    <string name="ok_button">Áfram</string>
+
+    <string name="drawer_one">Skúffa 1</string>
+    <string name="drawer_two">Skúffa 2</string>
+    <string name="drawer_three">Skúffa 3</string>
+    <string name="drawer_four">Skúffa 4</string>
+    <string name="drawer_five">Skúffa 5</string>
+    <string name="drawer_six">Skúffa 6</string>
+    <string name="drawer_seven">Skúffa 7</string>
 </resources>
