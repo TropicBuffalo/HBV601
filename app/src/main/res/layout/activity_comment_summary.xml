@@ -13,14 +13,14 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:gravity="center_horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/message"
+        app:layout_constraintBottom_toTopOf="@+id/athugasemd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         />
 
     <EditText
-        android:id="@+id/message"
+        android:id="@+id/athugasemd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Athugasemd..."
@@ -38,8 +38,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toStartOf="message"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         android:text="@string/back_button" />
 
     <Button

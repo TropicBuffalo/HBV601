@@ -9,39 +9,57 @@ import android.widget.Button;
 
 public class WelcomeScreen extends AppCompatActivity {
 
-    private Button wagonbutton; // initialise wagon button
-    private Button databutton; // initialise data button
-    private Button signoutbutton; // initialise signout button
+    private Button wagonButton; // initialise wagon button
+    private Button dataButton; // initialise data button
+    private Button signoutButton; // initialise signout button
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) { // creation of the Welcome screen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome_screen);
 
-        wagonbutton = (Button) findViewById(R.id.buttonVagnar); // adding a listener for the "wagon" button
-        wagonbutton.setOnClickListener(new View.OnClickListener() {
+
+        wagonButton = (Button) findViewById(R.id.button_wagons); // adding a listener for the "wagon" button
+        wagonButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                openWagons();
+                //openWagons();
+                wagonButton.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
+                        Intent wagonIntent = new Intent(WelcomeScreen.this, chooseWagons.class);
+                        startActivity(wagonIntent);
+                    }
+                });
             }
         });
 
-        databutton = (Button) findViewById(R.id.buttonGagnaskodun);// adding a listener for the "data" button
-        databutton.setOnClickListener(new View.OnClickListener() {
-
+        dataButton = (Button) findViewById(R.id.button_data);// adding a listener for the "data" button
+        dataButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                enterDataView();
+                //openWagons();
+                dataButton.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
+                        Intent commentIntent = new Intent(WelcomeScreen.this, viewData.class);
+                        startActivity(commentIntent);
+                    }
+                });
             }
         });
 
-        signoutbutton = (Button) findViewById(R.id.buttonUtskraning);// adding a listener for the "sign out" button
-        signoutbutton.setOnClickListener(new View.OnClickListener() {
-
+        signoutButton = (Button) findViewById(R.id.button_logout);// adding a listener for the "sign out" button
+        signoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                signingOut();
+                //openWagons();
+                signoutButton.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
+                        Intent signoutIntent = new Intent(WelcomeScreen.this, Login.class);
+                        startActivity(signoutIntent);
+                    }
+                });
             }
         });
     }
@@ -56,5 +74,8 @@ public class WelcomeScreen extends AppCompatActivity {
     public void signingOut(){ // yet to add signout function until then it takes you to the data screen
         Intent intent3= new Intent(this,viewData.class);
         startActivity(intent3);
+
     }
+
+
 }

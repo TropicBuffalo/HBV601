@@ -26,7 +26,7 @@ public class chooseWagons extends AppCompatActivity {
                 openDrawers();
             }
         });
-        /*
+
         athugasemd = (Button) findViewById(R.id.athugasemd);
         athugasemd.setOnClickListener(new View.OnClickListener() {
 
@@ -35,18 +35,18 @@ public class chooseWagons extends AppCompatActivity {
                 openAthugasemd();
             }
         });
-        */
+
     }
 
     public void openDrawers(){// takes the user to wagon page when the button is pressed
         Intent intent = new Intent(this,Drawers.class);
         startActivity(intent);
     }
-    /*
+
     public void openAthugasemd(){// takes the user to wagon page when the button is pressed
-        Intent intent = new Intent(this,Athugasemd.class);
+        Intent intent = new Intent(this, Comments.class);
         startActivity(intent);
     }
-    */
+
 
 }
