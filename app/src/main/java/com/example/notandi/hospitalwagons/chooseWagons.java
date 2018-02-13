@@ -16,7 +16,7 @@ public class chooseWagons extends AppCompatActivity {
         setContentView(R.layout.activity_choose_wagons);
 
         getSupportActionBar().setTitle("Velja vagn");
-        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         veljavagn = (Button) findViewById(R.id.veljavagn);
         veljavagn.setOnClickListener(new View.OnClickListener() {

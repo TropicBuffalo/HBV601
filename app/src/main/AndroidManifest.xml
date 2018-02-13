@@ -24,7 +24,8 @@
         </activity>
         <activity android:name=".WelcomeScreen">
         </activity>
-        <activity android:name=".chooseWagons" />
+        <activity android:name=".chooseWagons"
+            android:parentActivityName=".WelcomeScreen"></activity>
         <activity android:name=".viewData"
             android:parentActivityName=".WelcomeScreen"></activity>
         <activity android:name=".WagonSummary"></activity>
