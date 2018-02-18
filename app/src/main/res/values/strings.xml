@@ -18,10 +18,154 @@
     <string name="ok_button">Áfram</string>
 
     <string name="drawer_one">Skúffa 1</string>
+    <array name="Lyfjaskuffa">// lyfjaskúffa og nafnið á því sem á að vera í því.
+    <string-array name="Lyf">
+        <item> Inj. Adrenalin 1mg/ml</item>
+        <item>Inj. Adrenalin 0,1 mg /ml</item>
+        <item>Inj. Atropin 0,5mg/ml</item>
+        <item>Inj. Calcium Gluconate 10%</item>
+        <item> Inj. Cordarone 50mg/ml</item>
+        <item>Inj. Dormicum 1mg/ml</item>
+        <item>Inj. Dópamin 400mg/40/mg/ml</item>
+        <item>Inj. Furix 10mg/ml</item>
+        <item>Inj Flumazenil 0,1mg/ml</item>
+        <item>Inj Fenylefrin 0,1mg/ml</item>
+        <item>Inf. Glúkósa 500mg/ml (50%)</item>
+        <item>Inf. Magnesium 246mg/ml(1mmol/ml)</item>
+        <item>Inj. Naloxon.HCl. 0,4 mg/ml</item>
+        <item>Inf. Natríumhydrogenkarbonate 42mg/ml</item>
+        <item>Inj. Natríumklóríð 0,9%</item>
+        <item>Inf. Natríumklórið 0,9%	</item>
+        <item>Inj. Propolipid 10mg/ml</item>
+        <item>Inj. Seloken  1mg/ml</item>
+        <item>Inj. Solu-Cortef 50mg/ml  + leysir</item>
+        <item>Inj. Stesolid Novum/Stesolid 5mg/ml	Diazepam</item>
+        <item>Inj. Tavegyl  1mg/ml</item>
+        <item>Inj. Xylocard 20mg/m</item>
+        <item>Mini spike</item>
+        <item>Inj Esmeron 10mg/ml</item>
+        <item>Inj Fentanyl 0,05mg/ml</item>
+        <item>Inj. Celocurin 50mg/ml</item>
+        </string-array>
+        <string-array name="innihaldsefni">
+        <item>Adrenalin</item>
+        <item>Adrenalin</item>
+        <item>Atropin</item>
+        <item>Calsium gluconat</item>
+        <item>AmiodaronHCl</item>
+        <item>MidazolamHCl</item>
+        <item>Dópamín</item>
+        <item>Furosemid</item>
+        <item>Flumazenil</item>
+        <item>Fenylefrin</item>
+        <item>Glukosa</item>
+        <item>Magnesiumsulfat</item>
+        <item>NaloxonHCl</item>
+        <item>Natríumhydrogenkarbonate</item>
+        <item>Natriumklorið</item>
+        <item>Natríumklorið</item>
+        <item>Propofol</item>
+        <item>Metoprolol</item>
+        <item>Hydrocortison</item>
+        <item>Diazepam</item>
+        <item>Clemastin</item>
+        <item>Lidocain</item>
+        <item>Mini spike</item>
+        <item>Rocuronium</item>
+        <item>Fentanyl</item>
+        <item>Suxameton</item>
+        </string-array>
+        <string-array name="Magn">
+        <item>1ml</item>
+        <item>10</item>
+        <item>1ml</item>
+        <item>10ml</item>
+        <item>3ml</item>
+        <item>5ml</item>
+        <item>10ml</item>
+        <item>4ml</item>
+        <item>5 ml</item>
+        <item>5ml</item>
+        <item>50ml</item>
+        <item>10ml</item>
+        <item>1ml</item>
+        <item>250ml</item>
+        <item>50ml</item>
+        <item>250ml</item>
+        <item>20ml</item>
+        <item>5ml</item>
+        <item>2ml</item>
+        <item>2ml</item>
+        <item>2ml</item>
+        <item>5ml</item>
+        <item>stk</item>
+        <item>5ml</item>
+        <item>2ml</item>
+        <item>2ml</item>
+        </string-array>
+        <integer-array name="fjoldiMagns">
+        <item>8</item>
+        <item>1</item>
+        <item>8</item>
+        <item>2</item>
+        <item>6</item>
+        <item>3</item>
+        <item>1</item>
+        <item>4</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>2</item>
+        <item>2</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>2</item>
+        <item>6</item>
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+        <item>3</item>
+        <item>2</item>
+        <item>2</item>
+        <item>5</item>
+        <item>2</item>
+        </integer-array>
+        <string-array name="tegundMagns">
+        <item>amp</item>
+        <item>amp</item>
+        <item>amp</item>
+        <item>amp</item>
+        <item>amp</item>
+        <item>amp</item>
+        <item>amp</item>
+        <item>amp</item>
+        <item>amp</item>
+        <item>amp</item>
+        <item>hgl</item>
+        <item>hgl</item>
+        <item>amp</item>
+        <item>hgl</item>
+        <item>hgl</item>
+        <item>stk</item>
+        <item>hgl</item>
+        <item>amp</item>
+        <item>hgl</item>
+        <item>amp</item>
+        <item>amp</item>
+        <item>amp</item>
+        <item>stk</item>
+        <item>amp</item>
+        <item>amp</item>
+        <item>amp</item>
+        </string-array>
+    </array>
     <string name="drawer_two">Skúffa 2</string>
     <string name="drawer_three">Skúffa 3</string>
     <string name="drawer_four">Skúffa 4</string>
     <string name="drawer_five">Skúffa 5</string>
     <string name="drawer_six">Skúffa 6</string>
     <string name="drawer_seven">Skúffa 7</string>
+
+
 </resources>
