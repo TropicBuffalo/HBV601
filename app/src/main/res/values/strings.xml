@@ -18,7 +18,7 @@
     <string name="ok_button">Áfram</string>
 
     <string name="drawer_one">Skúffa 1</string>
-    <array name="Lyfjaskuffa">// lyfjaskúffa og nafnið á því sem á að vera í því.
+    // lyfjaskúffa og nafnið á því sem á að vera í því.
     <string-array name="Lyf">
         <item> Inj. Adrenalin 1mg/ml</item>
         <item>Inj. Adrenalin 0,1 mg /ml</item>
@@ -159,7 +159,7 @@
         <item>amp</item>
         <item>amp</item>
         </string-array>
-    </array>
+
     <string name="drawer_two">Skúffa 2</string>
     <string name="drawer_three">Skúffa 3</string>
     <string name="drawer_four">Skúffa 4</string>
