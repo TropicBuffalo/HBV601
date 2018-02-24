@@ -19,6 +19,11 @@ import android.view.MenuItem;
 
 import com.example.notandi.hospitalwagons.Fragment_Drawers.drawer1_Fragment;
 import com.example.notandi.hospitalwagons.Fragment_Drawers.drawer2_Fragment;
+import com.example.notandi.hospitalwagons.Fragment_Drawers.drawer3_Fragment;
+import com.example.notandi.hospitalwagons.Fragment_Drawers.drawer4_Fragment;
+import com.example.notandi.hospitalwagons.Fragment_Drawers.drawer5_Fragment;
+import com.example.notandi.hospitalwagons.Fragment_Drawers.drawer6_Fragment;
+import com.example.notandi.hospitalwagons.Fragment_Drawers.drawer7_Fragment;
 
 public class Drawers extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -82,8 +87,24 @@ public class Drawers extends AppCompatActivity
         //Finna ID fyrir takkana í Drawers Navigation bar og tengja það við rétt fragment
         if (id == R.id.nav_drawer1) {
             fragment = new drawer1_Fragment();
-        } else if(id == R.id.nav_drawer2) {
+        }
+        else if(id == R.id.nav_drawer2) {
             fragment = new drawer2_Fragment();
+        }
+        else if(id == R.id.nav_drawer3) {
+            fragment = new drawer3_Fragment();
+        }
+        else if(id == R.id.nav_drawer4) {
+            fragment = new drawer4_Fragment();
+        }
+        else if(id == R.id.nav_drawer5) {
+            fragment = new drawer5_Fragment();
+        }
+        else if(id == R.id.nav_drawer6) {
+            fragment = new drawer6_Fragment();
+        }
+        else if(id == R.id.nav_drawer7) {
+            fragment = new drawer7_Fragment();
         }
 
         else if (id == R.id.drawer_continue) {
@@ -93,6 +114,7 @@ public class Drawers extends AppCompatActivity
             Intent intent = new Intent(this, CommentSummary.class);
             startActivity(intent);
         }
+
 
         if(fragment != null) {
             FragmentManager fragmentManager = getSupportFragmentManager();
