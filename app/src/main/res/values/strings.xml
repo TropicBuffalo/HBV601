@@ -46,8 +46,8 @@
         <item>Inj Esmeron 10mg/ml</item>
         <item>Inj Fentanyl 0,05mg/ml</item>
         <item>Inj. Celocurin 50mg/ml</item>
-        </string-array>
-        <string-array name="innihaldsefni">
+    </string-array>
+    <string-array name="innihaldsefni">
         <item>Adrenalin</item>
         <item>Adrenalin</item>
         <item>Atropin</item>
@@ -74,8 +74,8 @@
         <item>Rocuronium</item>
         <item>Fentanyl</item>
         <item>Suxameton</item>
-        </string-array>
-        <string-array name="Magn">
+    </string-array>
+    <string-array name="Magn">
         <item>1ml</item>
         <item>10</item>
         <item>1ml</item>
@@ -102,8 +102,8 @@
         <item>5ml</item>
         <item>2ml</item>
         <item>2ml</item>
-        </string-array>
-        <integer-array name="fjoldiMagns">
+    </string-array>
+    <integer-array name="fjoldiMagns">
         <item>8</item>
         <item>1</item>
         <item>8</item>
@@ -130,8 +130,8 @@
         <item>2</item>
         <item>5</item>
         <item>2</item>
-        </integer-array>
-        <string-array name="tegundMagns">
+    </integer-array>
+    <string-array name="tegundMagns">
         <item>amp</item>
         <item>amp</item>
         <item>amp</item>
@@ -158,7 +158,7 @@
         <item>amp</item>
         <item>amp</item>
         <item>amp</item>
-        </string-array>
+    </string-array>
 
     <string name="drawer_two">Skúffa 2</string>
     <string name="drawer_three">Skúffa 3</string>
@@ -166,6 +166,12 @@
     <string name="drawer_five">Skúffa 5</string>
     <string name="drawer_six">Skúffa 6</string>
     <string name="drawer_seven">Skúffa 7</string>
+    <string name="title_activity_drawers">Drawers</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 
 
 </resources>

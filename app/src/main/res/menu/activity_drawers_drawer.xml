@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_drawer1"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Skúffa 1" />
+        <item
+            android:id="@+id/nav_drawer2"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Skúffa 2" />
+        <item
+            android:id="@+id/nav_drawer3"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Skúffa 3" />
+        <item
+            android:id="@+id/nav_drawer4"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Skúffa 4" />
+        <item
+            android:id="@+id/nav_drawer5"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Skúffa 5" />
+        <item
+            android:id="@+id/nav_drawer6"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Skúffa 6" />
+
+    </group>
+
+    <item android:title="Misc stuff">
+        <menu>
+            <item
+                android:id="@+id/drawer_continue"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Áfram?????" />
+
+            <item
+                android:id="@+id/drawer_comment"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Athugasemd?????" />
+        </menu>
+    </item>
+
+</menu>
