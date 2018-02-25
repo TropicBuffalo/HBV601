@@ -17,9 +17,28 @@
     <string name="back_button">Til baka</string>
     <string name="ok_button">Áfram</string>
 
-    <string name="drawer_one">Skúffa 1</string>
-    // lyfjaskúffa og nafnið á því sem á að vera í því.
-    <string-array name="Lyf">
+    <string name="top_of_wagon">Ofan á vagni</string>
+    <string-array name="medical_devices">
+        <item>Hjartastuðtæki</item>
+        <item>External pacemaker kapall og tilheyrandi padsar</item>
+        <item>Elektróður</item>
+        <item>Gelpúðar/Defib. padsar</item>
+        <item>Gult nálabox</item>
+        <item>AMBU-belgur og maski</item>
+        <item>Súrefnisslanga (græn)</item>
+        <item>Súrefniskútur</item>
+        <item>Sog og safnflaska</item>
+        <item>Kassi með grænni súrefnisslöngu</item>
+        <item>Eftirlitsblöð fyrir bráðavagn</item>
+        <item>Skráningarblöð fyrir endurlífgun</item>
+        <item>Ferlar í sérhæfðri endurlífgun fullorðinna</item>
+        <item>Lyftulykill</item>
+        <item>Súefnismettunarmælir</item>
+        <item>Hlustunarpípa</item>
+    </string-array>
+
+    <string name="medicine_drawer">Lyf</string>
+    <string-array name="medicine_drawer_items">
         <item> Inj. Adrenalin 1mg/ml</item>
         <item>Inj. Adrenalin 0,1 mg /ml</item>
         <item>Inj. Atropin 0,5mg/ml</item>
@@ -45,9 +64,9 @@
         <item>Mini spike</item>
         <item>Inj Esmeron 10mg/ml</item>
         <item>Inj Fentanyl 0,05mg/ml</item>
-        <item>Inj. Celocurin 50mg/ml</item>
+        <item>Inj. Celocurin 50mg/ml</item>7
     </string-array>
-    <string-array name="innihaldsefni">
+    <string-array name="medicine_drawer_info">
         <item>Adrenalin</item>
         <item>Adrenalin</item>
         <item>Atropin</item>
@@ -75,7 +94,7 @@
         <item>Fentanyl</item>
         <item>Suxameton</item>
     </string-array>
-    <string-array name="Magn">
+    <string-array name="medicine_drawer_dose">
         <item>1ml</item>
         <item>10</item>
         <item>1ml</item>
@@ -103,7 +122,7 @@
         <item>2ml</item>
         <item>2ml</item>
     </string-array>
-    <integer-array name="fjoldiMagns">
+    <integer-array name="medicine_drawer_quantity">
         <item>8</item>
         <item>1</item>
         <item>8</item>
@@ -131,7 +150,7 @@
         <item>5</item>
         <item>2</item>
     </integer-array>
-    <string-array name="tegundMagns">
+    <string-array name="medicine_drawer_type">
         <item>amp</item>
         <item>amp</item>
         <item>amp</item>
@@ -160,18 +179,402 @@
         <item>amp</item>
     </string-array>
 
+    <string name="drawer_one">Skúffa 1</string>
+    <string-array name="drawer_one_items">
+        <item>1 ml sprautur</item>
+        <item>2 ml sprautur</item>
+        <item>5 ml sprautur</item>
+        <item>10 ml sprautur</item>
+        <item>20 ml sprautur</item>
+        <item>60 ml sprautur</item>
+        <item>Venflonálar, hvítar</item>
+        <item>Venflonálar, grænar</item>
+        <item>Venflonálar, bleikar</item>
+        <item>Neoflonnálar, barna</item>
+        <item>Arteriunálar</item>
+        <item>Beinmergsbor (er á E6 og 14EG)</item>
+        <item>Beinmergsnálar (15mm, 25mm, 45mm) (Er á E6 og 14EG)</item>
+        <item>Uppdrögunarnálar</item>
+        <item>Tappar í venflo: hvítir, gulir, rauðir</item>
+        <item>3 way</item>
+        <item>3 way með 10 cm framlengingu</item>
+        <item>Stasi</item>
+        <item>Bómullarhnoðrar</item>
+        <item>Sprittpúðar</item>
+        <item>Plástur</item>
+        <item>Curapor</item>
+        <item>OpSite/Hydrofilm</item>
+        <item>Einnota rakvélar</item>
+        <item>Sekalon T 170 (CVK leggur, grár)</item>
+        <item>Sekalon T 120 (CVK leggur, grænn</item>
+        <item>Astrup sprautur</item>
+        <item>Skæri</item>
+    </string-array>
+    <integer-array name="drawer_one_quantity">
+        <item>5</item>
+        <item>10</item>
+        <item>10</item>
+        <item>5</item>
+        <item>2</item>
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>1</item>
+        <item>10</item>
+        <item>0</item>
+        <item>2</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>1</item>
+    </integer-array>
+    <string-array name="drawer_one_type">
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>ekkert</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>ekkert</item>
+        <item>ekkert</item>
+        <item>ekkert</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+    </string-array>
+
     <string name="drawer_two">Skúffa 2</string>
+    <string-array name="drawer_two_items">
+        <item>Hanskar ósterilir</item>
+        <item>Hanskar sterilir</item>
+        <item>Sogleggir, grænir</item>
+        <item>Sogleggir, hvítir</item>
+        <item>Millistykki fyrir sogleggi</item>
+        <item>Súrefnisgleraugu</item>
+        <item>Súrefnisleggur með svamp</item>
+        <item>Súrefnismaskar (NRB)</item>
+    </string-array>
+    <string-array name="drawer_two_quantity">
+        <item>1</item>
+        <item>0</item>
+        <item>4</item>
+        <item>2</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="drawer_two_type">
+        <item>kassi</item>
+        <item>Nr. 6.5, 7.5, 8</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+    </string-array>
+
     <string name="drawer_three">Skúffa 3</string>
+    <string-array name="drawer_three_items">
+        <item>Laryngoscope</item>
+        <item>Blöð á laryngoscope nr. 2, 3, 4</item>
+        <item>Rafhlöður í laryngoscope</item>
+        <item>Kokrennur nr. 1, 2, 3 (70, 80, 90, 100 mm)</item>
+        <item>Maskar nr. 3, 4 og 5</item>
+        <item>Barkatúbur nr. 6,5</item>
+        <item>Barkatúbur nr. 7</item>
+        <item>Barkatúbur nr. 7,5</item>
+        <item>Barkatúbur nr. 8</item>
+        <item>Leiðari fyrir barkatúbur</item>
+        <item>Igel túbur</item>
+        <item>Minitrack kit (Porex cricothyriodotmy Kit)</item>
+        <item>Æðatöng</item>
+        <item>Magilstöng</item>
+        <item>Xylocain gel (lidocain)</item>
+        <item>10 ml sprauta</item>
+        <item>Brúnn plástur</item>
+        <item>Capnographsnúra og millistykki</item>
+    </string-array>
+    <integer-array name="drawer_three_quantity">
+        <item>2</item>
+        <item>1</item>
+        <item>2</item>
+        <item>1</item>
+        <item>1</item>
+        <item>2</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>3</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+    <string-array name="drawer_three_type">
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk. af hverri stærð</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stærðir, gul, appelsínugul, græn</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>túba</item>
+        <item>stk</item>
+        <item> </item>
+        <item>Er á E6</item>
+    </string-array>
+
     <string name="drawer_four">Skúffa 4</string>
+    <string-array name="drawer_four_items">
+        <item>Stuðpadsar fyrir hjartarafstuðtæki og defi-Pads</item>
+        <item>Padsar til vara fyrir externa pacemacerkapal</item>
+        <item>Pappír fyrir defibrillator</item>
+        <item>Nýrnabakkar</item>
+        <item>Sæft vatn</item>
+        <item>Þrýstipoki</item>
+        <item>Pericardialsett á 14EG (er ekki á vagni E6 né á vagni 22A)</item>
+    </string-array>
+    <integer-array name="drawer_four_quantity">
+        <item>0</item>
+        <item>2</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+    <string-array name="drawer_four_type">
+        <item> </item>
+        <item>stk.</item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+        <item> </item>
+    </string-array>
+
     <string name="drawer_five">Skúffa 5</string>
+    <string-array name="drawer_five_items">
+        <item>Agilia vökvasett</item>
+        <item>Vökvasett, venjulegt með lofttappa</item>
+        <item>Framlengingarslanga</item>
+    </string-array>
+    <integer-array name="drawer_five_quantity">
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+    </integer-array>
+    <string-array name="drawer_five_type">
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+    </string-array>
+
     <string name="drawer_six">Skúffa 6</string>
+    <string-array name="drawer_six_items">
+        <item>Inf. Lidokain 0,4%</item>
+        <item>Inf. Ringer Acetat</item>
+        <item>Inf. Albumin 200g/l</item>
+    </string-array>
+    <string-array name="drawer_six_info">
+        <item>Lidocain</item>
+        <item>Na+, K+, Ca++, Mg++, Cl-, acetat</item>
+        <item> </item>
+    </string-array>
+    <string-array name="drawer_six_dose">
+        <item>500 ml</item>
+        <item>1000 ml</item>
+        <item>100 ml</item>
+    </string-array>
+    <integer-array name="drawer_six_quantity">
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </integer-array>
+    <string-array name="drawer_six_type">
+        <item>poki</item>
+        <item>poki</item>
+        <item>poki</item>
+    </string-array>
+
     <string name="drawer_seven">Skúffa 7</string>
+    <string-array name="drawer_seven_items">
+        <item>Inf. NaCl 0,9%</item>
+        <item>Inf. NaCl 0,9%</item>
+        <item>Inf. NaCl 0,9%</item>
+        <item>Inf. Glúkósa 5%</item>
+        <item>Inf. Glúkósa 5%</item>
+    </string-array>
+    <string-array name="drawer_seven_info">
+        <item>Natriumklorið</item>
+        <item>Natriumklorið</item>
+        <item>Natriumklorið</item>
+        <item>Glukosa</item>
+        <item>Glukosa</item>
+    </string-array>
+    <string-array name="drawer_seven_dose">
+        <item>100 ml</item>
+        <item>500 ml</item>
+        <item>1000 ml</item>
+        <item>100 ml</item>
+        <item>500 ml</item>
+    </string-array>
+    <integer-array name="drawer_seven_quantity">
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </integer-array>
+    <string-array name="drawer_seven_type">
+        <item>poki</item>
+        <item>poki</item>
+        <item>poki</item>
+        <item>poki</item>
+        <item>poki</item>
+    </string-array>
+
+    <string name="drawer_eight">Bráðabúnaður fyrir börn (í plastkassa neðst í vagni)</string>
+    <string-array name="drawer_eight_items">
+        <item>Verkferill fyrir bráðveik börn</item>
+        <item>Barna AMBU-poki - millistærð</item>
+        <item>Barnamaski nr 0/0</item>
+        <item>Barnamaski nr 1/0</item>
+        <item>Barnamaski nr 2/0</item>
+        <item>Barnamaski nr 3/0</item>
+        <item>Laryngoscope</item>
+        <item>Blað nr. 1</item>
+        <item>Blað nr. 2</item>
+        <item>Defib pads f. börn</item>
+        <item>Leiðari fyrir barnatúbu nr. 2,2</item>
+        <item>Leiðari fyrir barnatúbu nr. 4,0</item>
+        <item>Kokrennur af stærðum 0, 1, 2</item>
+        <item>Endotracheal túbur nr. 3, 4, 5, 6</item>
+        <item>Sogleggur nr. 6</item>
+        <item>Sogleggur nr. 8</item>
+        <item>Sogleggur nr. 10</item>
+        <item>Magilstöng</item>
+        <item>Æðanálar nr 0,6</item>
+        <item>Æðanálar nr. 0,8</item>
+        <item>Intraosseusnál, rosa (15g, 15mm) (Er á E6 og 14EG)</item>
+        <item>Intraosseusnál, blá (18g, 25mm) (Er á E6 og 14EG)</item>
+        <item>Butterflynálar nr. 21G og 23G</item>
+        <item>Spelka</item>
+        <item>Ferill í sérhæfðri endurlífgun barna</item>
+        <item>Súrefnismettunarnemar og millistykki sem passa á LP</item>
+        <item>Spritt</item>
+    </string-array>
+    <integer-array name="drawer_eight_quantity">
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>3</item>
+        <item>1</item>
+        <item>1</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>1</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>0</item>
+    </integer-array>
+    <string-array name="drawer_eight_type">
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item>stk.</item>
+        <item> </item>
+        <item>stk.</item>
+        <item> </item>
+    </string-array>
+
     <string name="title_activity_drawers">Drawers</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

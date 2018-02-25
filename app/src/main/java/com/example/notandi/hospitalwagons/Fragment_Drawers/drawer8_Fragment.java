@@ -18,20 +18,20 @@ import java.util.ArrayList;
  * Created by Petur on 24.2.2018.
  */
 
-public class drawer3_Fragment extends Fragment {
+public class drawer8_Fragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.word_list, container, false);
 
-        getActivity().setTitle(R.string.drawer_three);
+        getActivity().setTitle(R.string.drawer_eight);
 
         ArrayList<Item> items = new ArrayList<Item>();
 
-        String[] itemArr = getResources().getStringArray(R.array.drawer_three_items);
-        int[] quantityArr = getResources().getIntArray(R.array.drawer_three_quantity);
-        String[] typeArr = getResources().getStringArray(R.array.drawer_three_type);
+        String[] itemArr = getResources().getStringArray(R.array.drawer_eight_items);
+        int[] quantityArr = getResources().getIntArray(R.array.drawer_eight_quantity);
+        String[] typeArr = getResources().getStringArray(R.array.drawer_eight_type);
         String item;
         int quantity;
         String type;

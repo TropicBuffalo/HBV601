@@ -24,6 +24,9 @@ import com.example.notandi.hospitalwagons.Fragment_Drawers.drawer4_Fragment;
 import com.example.notandi.hospitalwagons.Fragment_Drawers.drawer5_Fragment;
 import com.example.notandi.hospitalwagons.Fragment_Drawers.drawer6_Fragment;
 import com.example.notandi.hospitalwagons.Fragment_Drawers.drawer7_Fragment;
+import com.example.notandi.hospitalwagons.Fragment_Drawers.drawer8_Fragment;
+import com.example.notandi.hospitalwagons.Fragment_Drawers.drawer_med_Fragment;
+import com.example.notandi.hospitalwagons.Fragment_Drawers.drawer_top_Fragment;
 
 public class Drawers extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -31,6 +34,9 @@ public class Drawers extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+
         setContentView(R.layout.activity_drawers);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -43,6 +49,13 @@ public class Drawers extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction ft = fragmentManager.beginTransaction();
+        ft.replace(R.id.screen_area, new drawer_top_Fragment());
+        ft.commit();
+
+
     }
 
     @Override
@@ -85,7 +98,13 @@ public class Drawers extends AppCompatActivity
 
         int id = item.getItemId();
         //Finna ID fyrir takkana í Drawers Navigation bar og tengja það við rétt fragment
-        if (id == R.id.nav_drawer1) {
+        if (id == R.id.nav_drawer_top) {
+            fragment = new drawer_top_Fragment();
+        }
+        else if(id == R.id.nav_drawer_med) {
+            fragment = new drawer_med_Fragment();
+        }
+        else if(id == R.id.nav_drawer1) {
             fragment = new drawer1_Fragment();
         }
         else if(id == R.id.nav_drawer2) {
@@ -106,6 +125,9 @@ public class Drawers extends AppCompatActivity
         else if(id == R.id.nav_drawer7) {
             fragment = new drawer7_Fragment();
         }
+        else if(id == R.id.nav_drawer8) {
+            fragment = new drawer8_Fragment();
+        }
 
         else if (id == R.id.drawer_continue) {
             Intent intent = new Intent(this, WagonSummary.class);
@@ -115,11 +137,9 @@ public class Drawers extends AppCompatActivity
             startActivity(intent);
         }
 
-
         if(fragment != null) {
             FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction ft = fragmentManager.beginTransaction();
-
             ft.replace(R.id.screen_area, fragment);
             ft.commit();
         }

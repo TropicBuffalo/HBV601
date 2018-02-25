@@ -18,29 +18,23 @@ import java.util.ArrayList;
  * Created by Petur on 24.2.2018.
  */
 
-public class drawer3_Fragment extends Fragment {
+public class drawer_top_Fragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.word_list, container, false);
 
-        getActivity().setTitle(R.string.drawer_three);
+        getActivity().setTitle(R.string.top_of_wagon);
 
         ArrayList<Item> items = new ArrayList<Item>();
 
-        String[] itemArr = getResources().getStringArray(R.array.drawer_three_items);
-        int[] quantityArr = getResources().getIntArray(R.array.drawer_three_quantity);
-        String[] typeArr = getResources().getStringArray(R.array.drawer_three_type);
-        String item;
-        int quantity;
-        String type;
+        String[] medicalDevices = getResources().getStringArray(R.array.medical_devices);
+        String medicalDevice;
 
-        for (int i = 0; i < itemArr.length; i++) {
-            item = itemArr[i];
-            quantity = quantityArr[i];
-            type = typeArr[i];
-            items.add(new Item(item, quantity, type));
+        for (int i = 0; i < medicalDevices.length; i++) {
+            medicalDevice = medicalDevices[i];
+            items.add(new Item(medicalDevice));
         }
 
         ItemAdapter adapter = new ItemAdapter(getActivity(), items);

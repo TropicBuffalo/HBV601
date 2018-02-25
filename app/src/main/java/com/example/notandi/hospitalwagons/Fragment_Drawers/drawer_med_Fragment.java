@@ -18,29 +18,36 @@ import java.util.ArrayList;
  * Created by Petur on 24.2.2018.
  */
 
-public class drawer3_Fragment extends Fragment {
+public class drawer_med_Fragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.word_list, container, false);
 
-        getActivity().setTitle(R.string.drawer_three);
+        getActivity().setTitle(R.string.medicine_drawer);
 
         ArrayList<Item> items = new ArrayList<Item>();
 
-        String[] itemArr = getResources().getStringArray(R.array.drawer_three_items);
-        int[] quantityArr = getResources().getIntArray(R.array.drawer_three_quantity);
-        String[] typeArr = getResources().getStringArray(R.array.drawer_three_type);
+        String[] itemArr = getResources().getStringArray(R.array.medicine_drawer_items);
+        String[] infoArr = getResources().getStringArray(R.array.medicine_drawer_info);
+        String[] doseArr = getResources().getStringArray(R.array.medicine_drawer_dose);
+        int[] quantityArr = getResources().getIntArray(R.array.medicine_drawer_quantity);
+        String[] typeArr = getResources().getStringArray(R.array.medicine_drawer_type);
         String item;
-        int quantity;
+        String info;
+        String dose;
         String type;
+        int quantity;
 
         for (int i = 0; i < itemArr.length; i++) {
             item = itemArr[i];
+            info = infoArr[i];
+            dose = doseArr[i];
             quantity = quantityArr[i];
             type = typeArr[i];
-            items.add(new Item(item, quantity, type));
+
+            items.add(new Item(item, info, dose, quantity, type));
         }
 
         ItemAdapter adapter = new ItemAdapter(getActivity(), items);
