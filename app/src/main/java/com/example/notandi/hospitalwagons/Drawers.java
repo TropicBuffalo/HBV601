@@ -177,8 +177,18 @@ public class Drawers extends AppCompatActivity
         }
 
         else if (id == R.id.drawer_continue) {
-            Intent intent = new Intent(this, WagonSummary.class);
-            startActivity(intent);
+            final Intent intent = new Intent(this, WagonSummary.class);
+            new AlertDialog.Builder(this)
+                    .setTitle("Er Skráningu hluta á vagni lokið?")
+                    .setNegativeButton("Nei",null)
+                    .setPositiveButton("já",new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            FinishComputeList(); // calls upon class to compute value from list
+                            startActivity(intent);
+                        }
+                    }).create().show();
+
         } else if (id == R.id.drawer_comment) {
             Intent intent = new Intent(this, CommentSummary.class);
             startActivity(intent);
@@ -208,5 +218,7 @@ public class Drawers extends AppCompatActivity
                     }
     }).create().show();
     }
-
+    private void FinishComputeList(){
+        // starts the process of working through the list
+    }
 }
