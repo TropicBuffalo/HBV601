@@ -25,12 +25,9 @@
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="Vagn nr 1"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/background_light" />
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-     />
+
 
 </LinearLayout>

@@ -10,6 +10,7 @@ public class chooseWagons extends AppCompatActivity {
     private Button veljavagn;
     private Button athugasemd;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +42,7 @@ public class chooseWagons extends AppCompatActivity {
     public void openDrawers(){// takes the user to wagon page when the button is pressed
         Intent intent = new Intent(this,Drawers.class);
         startActivity(intent);
+        Drawers.isSealBroken=false;
     }
 
     public void openAthugasemd(){// takes the user to wagon page when the button is pressed

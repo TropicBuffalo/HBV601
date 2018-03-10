@@ -1,5 +1,8 @@
 package com.example.notandi.hospitalwagons;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -30,7 +33,7 @@ import com.example.notandi.hospitalwagons.Fragment_Drawers.drawer_top_Fragment;
 
 public class Drawers extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+    public static boolean isSealBroken;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -102,31 +105,75 @@ public class Drawers extends AppCompatActivity
             fragment = new drawer_top_Fragment();
         }
         else if(id == R.id.nav_drawer_med) {
-            fragment = new drawer_med_Fragment();
+                    if(isSealBroken==false){
+                        isSealBroken_Message();
+                    }else{
+                        fragment = new drawer_med_Fragment();
+                    }
         }
         else if(id == R.id.nav_drawer1) {
-            fragment = new drawer1_Fragment();
+                    if(isSealBroken==false){
+                        isSealBroken_Message();
+                         if(isSealBroken==true)fragment = new drawer1_Fragment();
+                    }else {
+                        fragment = new drawer1_Fragment();
+                    }
         }
         else if(id == R.id.nav_drawer2) {
-            fragment = new drawer2_Fragment();
+                    if(isSealBroken==false){
+                        isSealBroken_Message();
+                        if(isSealBroken==true)fragment = new drawer2_Fragment();
+                    }else {
+                        fragment = new drawer2_Fragment();
+                    }
         }
         else if(id == R.id.nav_drawer3) {
-            fragment = new drawer3_Fragment();
+                    if(isSealBroken==false){
+                        isSealBroken_Message();
+                        if(isSealBroken==true)fragment = new drawer2_Fragment();
+                    }else {
+                        fragment = new drawer3_Fragment();
+                    }
         }
         else if(id == R.id.nav_drawer4) {
-            fragment = new drawer4_Fragment();
+                    if(isSealBroken==false){
+                        isSealBroken_Message();
+                        if(isSealBroken==true)fragment = new drawer4_Fragment();
+                    }else {
+                        fragment = new drawer4_Fragment();
+                    }
         }
         else if(id == R.id.nav_drawer5) {
-            fragment = new drawer5_Fragment();
+                    if(isSealBroken==false){
+                        isSealBroken_Message();
+                        if(isSealBroken==true)fragment = new drawer5_Fragment();
+                    }else {
+                        fragment = new drawer5_Fragment();
+                    }
         }
         else if(id == R.id.nav_drawer6) {
-            fragment = new drawer6_Fragment();
+                    if(isSealBroken==false){
+                        isSealBroken_Message();
+                        if(isSealBroken==true)fragment = new drawer6_Fragment();
+                    }else {
+                        fragment = new drawer6_Fragment();
+                    }
         }
         else if(id == R.id.nav_drawer7) {
-            fragment = new drawer7_Fragment();
+                    if(isSealBroken==false){
+                        isSealBroken_Message();
+                        if(isSealBroken==true)fragment = new drawer7_Fragment();
+                    }else {
+                        fragment = new drawer7_Fragment();
+                    }
         }
         else if(id == R.id.nav_drawer8) {
-            fragment = new drawer8_Fragment();
+                    if(isSealBroken==false){
+                        isSealBroken_Message();
+                        if(isSealBroken==true)fragment = new drawer8_Fragment();
+                    }else {
+                        fragment = new drawer8_Fragment();
+                    }
         }
 
         else if (id == R.id.drawer_continue) {
@@ -148,4 +195,18 @@ public class Drawers extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    public void isSealBroken_Message()
+    {
+        new AlertDialog.Builder(this)
+                .setTitle("Er innsigli rofið?")
+                .setNegativeButton("Nei",null)
+                .setPositiveButton("já",new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        isSealBroken=true;
+                    }
+    }).create().show();
+    }
+
 }
