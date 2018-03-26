@@ -23,7 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WelcomeScreen"></activity>
+        <activity android:name=".WelcomeScreen" />
         <activity
             android:name=".chooseWagons"
             android:parentActivityName=".WelcomeScreen" />
@@ -42,6 +42,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.notandi.hospitalwagons.chooseWagons" />
         </activity>
+        <activity android:name=".SignUpActivity"></activity>
     </application>
 
 </manifest>

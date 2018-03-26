@@ -38,20 +38,30 @@ import static android.Manifest.permission.READ_CONTACTS;
 /**
  * A login screen that offers login via email/password.
  */
-public class Login extends AppCompatActivity  {
+public class Login extends AppCompatActivity {
+
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.login);
 
         final Button button = findViewById(R.id.email_sign_in_button);
+        final Button RegistrationButton = findViewById(R.id.Register_button);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        button.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 Intent welcomeIntent = new Intent(Login.this, WelcomeScreen.class);
                 startActivity(welcomeIntent);
             }
         });
+
+        RegistrationButton.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+                Intent welcomeIntent = new Intent(Login.this, SignUpActivity.class);
+                startActivity(welcomeIntent);
+            }
+        });
+
     }
 }

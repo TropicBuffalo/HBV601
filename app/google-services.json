@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "855716704333",
+    "firebase_url": "https://neidarvagn.firebaseio.com",
+    "project_id": "neidarvagn",
+    "storage_bucket": "neidarvagn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855716704333:android:943646ce5300ae42",
+        "android_client_info": {
+          "package_name": "com.example.notandi.hospitalwagons"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855716704333-nqaktgmea59t1i7oop15iuo1o9n7114f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.notandi.hospitalwagons",
+            "certificate_hash": "617afc1690940fc84b19397d8c414401957ac18b"
+          }
+        },
+        {
+          "client_id": "855716704333-384mu6bil7r3lsjcgcg940jk50bq62gv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAR3yimEk06HGggviohTCSQsZPCv00dfRg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855716704333-384mu6bil7r3lsjcgcg940jk50bq62gv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

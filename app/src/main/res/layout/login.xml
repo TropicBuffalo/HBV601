@@ -42,7 +42,15 @@
         android:text="@string/action_sign_in"
         android:textStyle="bold"
         android:visibility="visible"
-        tools:text="Sign in" />
+        tools:text="Innskráingin" />
+
+    <Button
+        android:id="@+id/Register_button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_default"
+        android:text="Nýskráning" />
 
 
 </LinearLayout>
