@@ -73,15 +73,17 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             public void onComplete(@NonNull Task<AuthResult> task) {
                 progressBar.setVisibility(View.GONE);
                 if (task.isSuccessful()) {
+                    Toast.makeText(getApplicationContext(), "Nýkráning tókst", Toast.LENGTH_SHORT).show();
                     finish();
                     startActivity(new Intent(SignUpActivity.this, Login.class));
                 } else {
 
                     if (task.getException() instanceof FirebaseAuthUserCollisionException) {
-                        Toast.makeText(getApplicationContext(), "You are already registered", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Notandi er núþegar til", Toast.LENGTH_SHORT).show();
 
                     } else {
                         Toast.makeText(getApplicationContext(), task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Nýkráning tókst ekki", Toast.LENGTH_SHORT).show();
                     }
 
                 }
