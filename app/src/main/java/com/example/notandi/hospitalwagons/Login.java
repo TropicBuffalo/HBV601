@@ -66,7 +66,7 @@ public class Login extends AppCompatActivity implements OnClickListener {
         mAuth = FirebaseAuth.getInstance();
 
         // will be deleted after the development of app
-        RegistrationButton.setOnClickListener(new OnClickListener() {
+        login_withaout_Auth.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 Intent SignUp = new Intent(Login.this, WelcomeScreen.class);
                 startActivity(SignUp);
