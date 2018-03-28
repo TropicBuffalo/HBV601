@@ -38,6 +38,16 @@
         android:paddingRight="15dp">
 
         <EditText
+            android:id="@+id/editTextEmployee_identification_Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:hint="Starfsmannanúmer"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="15dp"
+            android:textColorHint="@android:color/holo_red_dark" />
+
+        <EditText
             android:id="@+id/editTextEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -53,6 +63,15 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:hint="lykilorð"
+            android:inputType="textPassword"
+            android:paddingBottom="15dp"
+            android:textColorHint="@android:color/holo_red_dark" />
+        <EditText
+            android:id="@+id/editTextConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:hint="Endurtaka lykilorð"
             android:inputType="textPassword"
             android:paddingBottom="15dp"
             android:textColorHint="@android:color/holo_red_dark" />

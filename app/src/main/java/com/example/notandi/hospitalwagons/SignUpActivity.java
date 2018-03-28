@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
 
     ProgressBar progressBar;
-    EditText editTextEmail, editTextPassword;
+    EditText editTextEmail, editTextPassword, editTextConfirmPassword,editTextEmployee_identification_Number;
 
     private FirebaseAuth mAuth;
 
@@ -28,8 +28,10 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
+        editTextEmployee_identification_Number = (EditText) findViewById(R.id.editTextEmployee_identification_Number);
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
+        editTextConfirmPassword = (EditText) findViewById(R.id.editTextConfirmPassword);
         progressBar = (ProgressBar) findViewById(R.id.progressbar);
 
         mAuth = FirebaseAuth.getInstance();
@@ -39,9 +41,38 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     private void registerUser() {
+        String employeeNumber = editTextEmployee_identification_Number.getText().toString().trim();
         String email = editTextEmail.getText().toString().trim();
         String password = editTextPassword.getText().toString().trim();
+        String confirmedpassword = editTextConfirmPassword.getText().toString().trim();
 
+        boolean doesEmployeeNumberExist=true;
+        doesEmployeeNumberExist=searchForEmployeeNumber();
+        if (doesEmployeeNumberExist=false) { // going into database and looking for the employee number
+            editTextEmail.setError("Þetta starfsmannanúmer er ekki til");
+            editTextEmail.requestFocus();
+            return;
+        }
+        if (employeeNumber.isEmpty()) {
+            editTextEmail.setError("Skrifa þarf Starfsmannanúmer");
+            editTextEmail.requestFocus();
+            return;
+        }
+        if (confirmedpassword!= password) {
+            editTextEmail.setError("Sama lykilorðið hefur ekki verið skrifað tvisvar");
+            editTextEmail.requestFocus();
+            return;
+        }
+        if (confirmedpassword.isEmpty()) {
+            editTextEmail.setError("Endurtaka þarf lykilorð");
+            editTextEmail.requestFocus();
+            return;
+        }
+        if (email.isEmpty()) {
+            editTextEmail.setError("Þörf er á email");
+            editTextEmail.requestFocus();
+            return;
+        }
         if (email.isEmpty()) {
             editTextEmail.setError("Þörf er á email");
             editTextEmail.requestFocus();
@@ -90,6 +121,11 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             }
         });
 
+    }
+    private boolean searchForEmployeeNumber(){
+        mAuth.mago =
+
+    return true;
     }
 
     @Override
