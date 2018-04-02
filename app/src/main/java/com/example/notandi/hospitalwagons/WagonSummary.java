@@ -3,8 +3,13 @@ package com.example.notandi.hospitalwagons;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 /**
  * Created by Petur on 11.2.2018.
@@ -13,11 +18,27 @@ import android.widget.Button;
 public class WagonSummary extends AppCompatActivity {
 
     private Button naest;
+    private EditText editText2;
+    private String test;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wagon_summary);
+
+        naest = (Button) findViewById(R.id.naest);
+        editText2 = (EditText)findViewById(R.id.editText2);
+        naest.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                FirebaseDatabase database = FirebaseDatabase.getInstance();
+                test = editText2.getText().toString();
+                DatabaseReference myRef = database.getReference(test);
+
+                myRef.setValue("123");
+            }
+        });
     }
 
     /* naest = (Button) findViewById(R.id.neast);

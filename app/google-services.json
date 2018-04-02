@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "855716704333-416if83lhk0b78guu3c40tek8k9jrl8l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.notandi.hospitalwagons",
+            "certificate_hash": "8d2975a8fab80c967a702aa90223c272e0efc112"
+          }
+        },
+        {
           "client_id": "855716704333-nqaktgmea59t1i7oop15iuo1o9n7114f.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

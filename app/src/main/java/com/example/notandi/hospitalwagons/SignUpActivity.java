@@ -47,6 +47,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         String confirmedpassword = editTextConfirmPassword.getText().toString().trim();
 
         boolean doesEmployeeNumberExist=true;
+        /*
         doesEmployeeNumberExist=searchForEmployeeNumber();
         if (doesEmployeeNumberExist=false) { // going into database and looking for the employee number
             editTextEmail.setError("Þetta starfsmannanúmer er ekki til");
@@ -96,7 +97,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             editTextPassword.requestFocus();
             return;
         }
-
+*/
         progressBar.setVisibility(View.VISIBLE);
         mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
@@ -121,10 +122,12 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         });
 
     }
+    /*
     private boolean searchForEmployeeNumber(){
 
     return true;
     }
+    */
 
     @Override
     public void onClick(View view) {

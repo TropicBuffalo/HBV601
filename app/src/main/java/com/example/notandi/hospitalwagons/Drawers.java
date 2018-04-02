@@ -130,7 +130,7 @@ public class Drawers extends AppCompatActivity
         else if(id == R.id.nav_drawer3) {
                     if(isSealBroken==false){
                         isSealBroken_Message();
-                        if(isSealBroken==true)fragment = new drawer2_Fragment();
+                        if(isSealBroken==true)fragment = new drawer3_Fragment();
                     }else {
                         fragment = new drawer3_Fragment();
                     }
