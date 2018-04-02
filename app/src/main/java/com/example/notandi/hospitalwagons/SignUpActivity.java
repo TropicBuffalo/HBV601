@@ -17,7 +17,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 
 public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
-
+    // iniialize
     ProgressBar progressBar;
     EditText editTextEmail, editTextPassword, editTextConfirmPassword,editTextEmployee_identification_Number;
 
@@ -27,7 +27,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
-
+        // calling upon the input fields
         editTextEmployee_identification_Number = (EditText) findViewById(R.id.editTextEmployee_identification_Number);
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
@@ -98,7 +98,6 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         }
 
         progressBar.setVisibility(View.VISIBLE);
-
         mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -123,7 +122,6 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
     }
     private boolean searchForEmployeeNumber(){
-        mAuth.mago =
 
     return true;
     }
