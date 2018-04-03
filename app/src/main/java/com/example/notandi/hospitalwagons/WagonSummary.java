@@ -11,6 +11,12 @@ import android.widget.EditText;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
+
 /**
  * Created by Petur on 11.2.2018.
  */
@@ -19,7 +25,11 @@ public class WagonSummary extends AppCompatActivity {
 
     private Button naest;
     private EditText editText2;
+    private EditText editText3;
     private String test;
+    private String user;
+    private String missing;
+    String currentDate = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss", Locale.getDefault()).format(new Date());
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,15 +38,20 @@ public class WagonSummary extends AppCompatActivity {
 
         naest = (Button) findViewById(R.id.naest);
         editText2 = (EditText)findViewById(R.id.editText2);
+        editText3 = (EditText)findViewById(R.id.editText3);
         naest.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 FirebaseDatabase database = FirebaseDatabase.getInstance();
-                test = editText2.getText().toString();
-                DatabaseReference myRef = database.getReference(test);
-
-                myRef.setValue("123");
+                DatabaseReference ref = database.getReference(currentDate);
+                missing = editText3.getText().toString();
+                user = editText2.getText().toString();
+                DatabaseReference myRef2 = ref.child("Missing");
+                myRef2.setValue(missing);
+                DatabaseReference myRef = ref.child("User");
+                myRef.setValue(user);
+                });,
             }
         });
     }
