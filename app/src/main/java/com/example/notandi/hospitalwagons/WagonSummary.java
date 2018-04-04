@@ -51,9 +51,9 @@ public class WagonSummary extends AppCompatActivity {
                 myRef2.setValue(missing);
                 DatabaseReference myRef = ref.child("User");
                 myRef.setValue(user);
-                });,
-            }
-        });
+                }
+            });
+        }
     }
 
     /* naest = (Button) findViewById(R.id.neast);
@@ -70,5 +70,6 @@ public class WagonSummary extends AppCompatActivity {
         Intent intent = new Intent(this,placeholder.class);
         startActivity(intent);
     }
-    */
+
 }
+*/
