@@ -54,19 +54,20 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             editTextEmail.requestFocus();
             return;
         }
+        */
         if (employeeNumber.isEmpty()) {
-            editTextEmail.setError("Skrifa þarf Starfsmannanúmer");
-            editTextEmail.requestFocus();
+            editTextEmployee_identification_Number.setError("Skrifa þarf Starfsmannanúmer");
+            editTextEmployee_identification_Number.requestFocus();
             return;
         }
-        if (confirmedpassword!= password) {
-            editTextEmail.setError("Sama lykilorðið hefur ekki verið skrifað tvisvar");
-            editTextEmail.requestFocus();
+        if (confirmedpassword.equals(password)==false){
+            editTextConfirmPassword.setError("Sama lykilorðið hefur ekki verið skrifað tvisvar");
+            editTextConfirmPassword.requestFocus();
             return;
         }
         if (confirmedpassword.isEmpty()) {
-            editTextEmail.setError("Endurtaka þarf lykilorð");
-            editTextEmail.requestFocus();
+            editTextConfirmPassword.setError("Endurtaka þarf lykilorð");
+            editTextConfirmPassword.requestFocus();
             return;
         }
         if (email.isEmpty()) {
@@ -97,7 +98,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             editTextPassword.requestFocus();
             return;
         }
-*/
+
         progressBar.setVisibility(View.VISIBLE);
         mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override

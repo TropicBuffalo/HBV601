@@ -3,6 +3,7 @@ package com.example.notandi.hospitalwagons;
 import android.app.Activity;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,6 +42,7 @@ public class ItemAdapter extends ArrayAdapter<Item> {
 
         // Find the TextView in the list_item.xml layout with the ID version_name
         TextView itemTextView = (TextView) listItemView.findViewById(R.id.item);
+
         // Get the version name from the current object and
         // set this text on the name TextView
         itemTextView.setText(currentItem.getItem());
@@ -50,6 +52,7 @@ public class ItemAdapter extends ArrayAdapter<Item> {
 
         TextView doseTextView = (TextView) listItemView.findViewById(R.id.dose);
         doseTextView.setText(currentItem.getDose());
+
 
         TextView quantityTextView = (TextView) listItemView.findViewById(R.id.quantity);
         quantityTextView.setText(currentItem.getQuantity());
@@ -86,3 +89,4 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         return listItemView;
     }
 }
+

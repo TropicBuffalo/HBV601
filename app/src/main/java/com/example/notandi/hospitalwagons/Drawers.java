@@ -38,8 +38,6 @@ public class Drawers extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
-
         setContentView(R.layout.activity_drawers);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -57,7 +55,6 @@ public class Drawers extends AppCompatActivity
         FragmentTransaction ft = fragmentManager.beginTransaction();
         ft.replace(R.id.screen_area, new drawer_top_Fragment());
         ft.commit();
-
 
     }
 
@@ -103,13 +100,14 @@ public class Drawers extends AppCompatActivity
         //Finna ID fyrir takkana í Drawers Navigation bar og tengja það við rétt fragment
         if (id == R.id.nav_drawer_top) {
             fragment = new drawer_top_Fragment();
-        }
-        else if(id == R.id.nav_drawer_med) {
-                    if(isSealBroken==false){
-                        isSealBroken_Message();
-                    }else{
-                        fragment = new drawer_med_Fragment();
-                    }
+        } else if (id == R.id.nav_drawer_med) {
+            if (isSealBroken == false) {
+                isSealBroken_Message();
+            }
+            if (isSealBroken == true) {
+                    fragment = new drawer_med_Fragment();
+            }
+
         }
         else if(id == R.id.nav_drawer1) {
                     if(isSealBroken==false){
