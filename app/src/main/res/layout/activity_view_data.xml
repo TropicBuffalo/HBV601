@@ -1,44 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.notandi.hospitalwagons.viewData">
 
-    <android.support.design.widget.TabLayout
-        android:id="@+id/tabs"
-        android:layout_width="385dp"
-        android:layout_height="68dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_chainStyle="spread"
-        app:layout_constraintWidth_default="wrap"
-        tools:layout_editor_absoluteY="0dp">
-
-        <android.support.design.widget.TabItem
-            android:id="@+id/Vagn1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Vagn1" />
-
-        <android.support.design.widget.TabItem
-            android:id="@+id/Vagn2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Vagn2" />
-
-        <android.support.design.widget.TabItem
-            android:id="@+id/Vagn3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Vagn3" />
-    </android.support.design.widget.TabLayout>
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="384dp"
-        android:layout_height="442dp"
-        android:text="Some data needs to be inserted"
-        app:layout_constraintBottom_toBottomOf="@+id/tabs"
-        tools:layout_editor_absoluteX="0dp" />
-</android.support.constraint.ConstraintLayout>
+    <ListView
+        android:id="@+id/userlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+</LinearLayout>
