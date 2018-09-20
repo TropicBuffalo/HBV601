@@ -18,7 +18,10 @@ import java.util.ArrayList;
  * Created by Petur on 24.2.2018.
  */
 
+
 public class drawer_top_Fragment extends Fragment {
+
+
 
     @Nullable
     @Override
@@ -49,5 +52,6 @@ public class drawer_top_Fragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        setRetainInstance(true);
     }
 }

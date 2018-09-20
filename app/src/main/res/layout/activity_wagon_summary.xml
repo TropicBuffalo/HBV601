@@ -31,13 +31,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listView2"
+        app:layout_constraintTop_toBottomOf="@+id/wagonSummaryList"
         app:layout_constraintVertical_bias="0.289" />
 
     <ListView
-        android:id="@+id/listView2"
+        android:id="@+id/wagonSummaryList"
         android:layout_width="368dp"
-        android:layout_height="72dp"
+        android:layout_height="201dp"
         android:layout_marginBottom="136dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"

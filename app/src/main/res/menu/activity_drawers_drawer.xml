@@ -43,21 +43,23 @@
         <item
             android:id="@+id/nav_drawer8"
             android:icon="@drawable/ic_menu_send"
-            android:title="Skúffa 8" />
+            android:title="Bráðabúnaður fyrir börn" />
 
     </group>
-
-    <item android:title="Misc stuff">
+    <item android:title="Vantar/Óklárað">
         <menu>
             <item
                 android:id="@+id/drawer_continue"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Áfram?????" />
-
+                android:title="Vantar/óklárað listinn" />
+        </menu>
+    </item>
+    <item android:title="Klára Færslu">
+        <menu>
             <item
-                android:id="@+id/drawer_comment"
+                android:id="@+id/commit_list"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Athugasemd?????" />
+                android:title="Klára notkun á vagni" />
         </menu>
     </item>
 

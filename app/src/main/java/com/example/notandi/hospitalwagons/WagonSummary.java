@@ -39,6 +39,8 @@ public class WagonSummary extends AppCompatActivity {
         naest = (Button) findViewById(R.id.naest);
         editText2 = (EditText)findViewById(R.id.editText2);
         editText3 = (EditText)findViewById(R.id.editText3);
+
+        // send in list and data to database
         naest.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -51,6 +53,7 @@ public class WagonSummary extends AppCompatActivity {
                 myRef2.setValue(missing);
                 DatabaseReference myRef = ref.child("User");
                 myRef.setValue(user);
+                Intent SignUp = new Intent(WagonSummary.this, WelcomeScreen.class);
                 }
             });
         }

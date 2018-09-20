@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.notandi.hospitalwagons.Fragment_Drawers.drawer_med_Fragment;
+
 
 public class WelcomeScreen extends AppCompatActivity {
 
@@ -19,6 +21,10 @@ public class WelcomeScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome_screen);
 
+        drawer_med_Fragment d=new drawer_med_Fragment();
+
+        //d.quantityArr=getResources().getIntArray(R.array.medicine_drawer_quantity);
+        //System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA: "+d.quantityArr);
 
         wagonButton = (Button) findViewById(R.id.button_wagons); // adding a listener for the "wagon" button
         wagonButton.setOnClickListener(new View.OnClickListener() {
@@ -28,7 +34,8 @@ public class WelcomeScreen extends AppCompatActivity {
                 //openWagons();
                 wagonButton.setOnClickListener(new View.OnClickListener() {
                     public void onClick(View v) {
-                        Intent wagonIntent = new Intent(WelcomeScreen.this, chooseWagons.class);
+
+                        Intent wagonIntent = new Intent(WelcomeScreen.this, BarcodeScannerFunction.class);
                         startActivity(wagonIntent);
                     }
                 });

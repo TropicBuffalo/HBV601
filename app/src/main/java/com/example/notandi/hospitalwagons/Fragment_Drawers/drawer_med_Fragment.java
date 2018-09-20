@@ -10,6 +10,7 @@ import android.widget.ListView;
 
 import com.example.notandi.hospitalwagons.Item;
 import com.example.notandi.hospitalwagons.ItemAdapter;
+import com.example.notandi.hospitalwagons.ListProcessing;
 import com.example.notandi.hospitalwagons.R;
 
 import java.util.ArrayList;
@@ -19,6 +20,8 @@ import java.util.ArrayList;
  */
 
 public class drawer_med_Fragment extends Fragment {
+
+    public int[] quantityArr;
 
     @Nullable
     @Override
@@ -32,8 +35,13 @@ public class drawer_med_Fragment extends Fragment {
         String[] itemArr = getResources().getStringArray(R.array.medicine_drawer_items);
         String[] infoArr = getResources().getStringArray(R.array.medicine_drawer_info);
         String[] doseArr = getResources().getStringArray(R.array.medicine_drawer_dose);
-        int[] quantityArr = getResources().getIntArray(R.array.medicine_drawer_quantity);
         String[] typeArr = getResources().getStringArray(R.array.medicine_drawer_type);
+        int[] quantityArr= new int[26];
+        for(int i=0;i<26;i++){
+            int a = Integer.parseInt(ListProcessing.wagon[0][1][i][3]);
+            quantityArr[i]=a;
+            }
+
         String item;
         String info;
         String dose;
@@ -41,12 +49,12 @@ public class drawer_med_Fragment extends Fragment {
         int quantity;
 
         for (int i = 0; i < itemArr.length; i++) {
+
             item = itemArr[i];
             info = infoArr[i];
             dose = doseArr[i];
             quantity = quantityArr[i];
             type = typeArr[i];
-
             items.add(new Item(item, info, dose, quantity, type));
         }
 
@@ -62,5 +70,9 @@ public class drawer_med_Fragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        setRetainInstance(true);
     }
+    //public void startlistTop(){
+      //  quantityArr =  getResources().getIntArray(R.array.medicine_drawer_quantity);
+    //}
 }

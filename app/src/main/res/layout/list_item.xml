@@ -50,15 +50,13 @@
         android:id="@+id/quantity"
         android:layout_width="30dp"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/black"
-        android:layout_marginRight="4dp"
-        android:layout_marginLeft="8dp"
+        android:inputType="number|none"
         android:textAlignment="center"
+        android:textColor="@android:color/black"
         android:textSize="18sp"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/guideline"
-        tools:text="Quantity"
-        android:inputType="number|none"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Quantity" />
 
     <TextView
         android:id="@+id/type"

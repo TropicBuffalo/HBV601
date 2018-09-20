@@ -13,20 +13,23 @@ public class Item {
     private String dose;
     private String type;
     private int quantity;
+    private int userQuantity;
 
     private boolean isInfo = false;
     private boolean isDose = false;
     private boolean isQuantity = false;
     private boolean isCheckBox = false;
+    public int itemChosen;
 
     /**
-     *
      * @param wItem
      */
+
     public Item(String wItem) {
         item = wItem;
         isCheckBox = true;
     }
+
 
     /**
      * @param wItem is the name of the item/medicine
@@ -89,5 +92,7 @@ public class Item {
         return isQuantity;
     }
 
+    public void findViewById (int quantity) {
+    }
 }
 

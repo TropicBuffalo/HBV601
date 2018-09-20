@@ -10,6 +10,7 @@ import android.widget.ListView;
 
 import com.example.notandi.hospitalwagons.Item;
 import com.example.notandi.hospitalwagons.ItemAdapter;
+import com.example.notandi.hospitalwagons.ListProcessing;
 import com.example.notandi.hospitalwagons.R;
 
 import java.util.ArrayList;
@@ -30,7 +31,11 @@ public class drawer4_Fragment extends Fragment {
         ArrayList<Item> items = new ArrayList<Item>();
 
         String[] itemArr = getResources().getStringArray(R.array.drawer_four_items);
-        int[] quantityArr = getResources().getIntArray(R.array.drawer_four_quantity);
+        int[] quantityArr = new int[7];
+        for(int i=0;i<7;i++){
+            int a = Integer.parseInt(ListProcessing.wagon[0][5][i][3]);
+            quantityArr[i]=a;
+        }
         String[] typeArr = getResources().getStringArray(R.array.drawer_four_type);
         String item;
         int quantity;
@@ -56,5 +61,6 @@ public class drawer4_Fragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        setRetainInstance(true);
     }
 }
